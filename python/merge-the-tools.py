@@ -1,5 +1,4 @@
 def merge_the_tools(string, k):
-    # your code goes here
     for i in range(0,len(string),k):
         unique_char = []
         sub_str = string[i:i+k]
