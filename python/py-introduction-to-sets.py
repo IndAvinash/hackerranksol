@@ -1,7 +1,10 @@
 from functools import reduce
 def average(array):
     m_set = set(array)
-    reduce(lambda x,y : x+y,m_set)
+    m_set = list(m_set)
+    n = len(m_set)
+    sum = reduce(lambda x,y : x+y,m_set)
+    return sum/n
 
 
 if __name__ == '__main__':
